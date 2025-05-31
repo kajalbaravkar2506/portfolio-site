@@ -1,0 +1,109 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-item img:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.drive-link {
+    font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6EFF43;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+.drive-link:hover {
+  background-color: #57c134;
+}
+
+.container3 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  background-image:
+    linear-gradient(to right, #f3f3f3 1px, transparent 1px),
+    linear-gradient(to bottom, #f3f3f3 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-repeat: repeat;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.title3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 4vw;
+  font-weight: 900;
+  color: #6EFF43;
+  text-shadow: 4px 4px black;
+  margin: 0;
+  margin-top: -30px;
+  animation:fadeInUp 1.2s ease-out forwards ;
+}
+.next-btn1 {
+  font-family: 'Arial', sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 30px;
+  background-color: #6EFF43;
+  color: black;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+.next-btn1:hover {
+  background-color: #57c134;
+}

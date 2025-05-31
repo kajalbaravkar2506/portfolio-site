@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You | Kajal Baravkar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container-thankyou {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      background-image:
+        linear-gradient(to right, #f3f3f3 1px, transparent 1px),
+        linear-gradient(to bottom, #f3f3f3 1px, transparent 1px);
+      background-size: 20px 20px;
+      background-repeat: repeat;
+      background-position: top left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .thankyou-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 10vw;
+      font-weight: 800;
+      color: #6EFF43;
+      text-shadow: 4px 4px black;
+      animation: scaleFade 2.5s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes scaleFade {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .side-label {
+      font-family: 'Arial', sans-serif;
+      position: absolute;
+      writing-mode: vertical-rl;
+      transform: translateY(-5%) rotate(180deg);
+      left: 0;
+      top: 60%;
+      font-size: 1.08rem;
+      letter-spacing: 0.1rem;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-thankyou">
+    <div class="side-label">CREATIVE PORTFOLIO</div>
+    <h1 class="thankyou-text">THANK YOU</h1>
+  </div>
+</body>
+</html>

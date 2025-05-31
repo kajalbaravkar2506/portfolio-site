@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  transform: translateY(-5%);
+  background-image:
+    url('abstract-bg.png'),
+    linear-gradient(to right, #f3f3f3 1px, transparent 1px),
+    linear-gradient(to bottom, #f3f3f3 1px, transparent 1px);
+  background-size: 700px, 20px 20px, 20px 20px;
+  background-repeat: no-repeat, repeat, repeat;
+  background-position: center, left top, left top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+@keyframes pulseZoom {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+.title {
+  font-family: 'Arial', sans-serif;
+  font-size: 10vw;
+  font-weight: 900;
+  color: #6EFF43;
+  text-shadow: 3px 3px black;
+  z-index: 2;
+  margin: 0;
+  animation: pulseZoom 2s ease-in-out infinite;
+}
+.subtitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 8vw;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+  z-index: 2;
+  margin: -20px 0 0 0;
+}
+.side-label {
+  font-family: 'Arial', sans-serif;
+  position: absolute;
+  writing-mode: vertical-rl;
+  transform: translateY(-5%) rotate(180deg);
+  left: 0;
+  top: 60%;
+  font-size: 1.08rem;
+  letter-spacing: 0.1rem;
+  z-index: 2;
+}
+.author {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: black;
+  z-index: 2;
+}
+.next-btn {
+  font-family: 'Arial', sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 30px;
+  background-color: #6EFF43;
+  color: black;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+.next-btn:hover {
+  background-color: #57c134;
+}
